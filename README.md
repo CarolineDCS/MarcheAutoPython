@@ -3,6 +3,8 @@
 ## Présentation du projet
 
 Dans la peau d'un directeur commercial d'un revendeur automobile souhaitant comprendre le marché aux Etats-Unis, on dispose d'un dataset détaillant plus de 588 000 transactions.
+Vous trouverez [ici](usa_vehicle_sales_data.zip) les données.
+L'analyse se trouve [ici](projetCarolineD.ipynb).
 
 ## Les données
 
@@ -81,4 +83,16 @@ Afin d'obtenir des chiffres normalisés, l'analyse porte sur la marge par rappor
 *	Les États affichant une marge médiane vraiment mauvaise sont peu nombreux : Hawaii, le Massachusetts, le Maryland et New York.
 
 ## Conclusions et limites
-<img width="1736" height="525" alt="body_volume" src="https://github.com/user-attachments/assets/97a70f25-40a8-4bc7-b3f2-4cb21d671bde" />
+
+### Principaux enseignements :
+*	Pour maximiser les chances de vente, il vaut mieux proposer une berline ou un SUV - mais ces carrosseries n'offrent pas la meilleure marge médiane.
+*	L'âge du véhicule a un impact fort sur le volume : il est préférable de revendre un véhicule âgé de 1 à 3 ans.
+*	Les couleurs sobres (noir, blanc, argent, gris) génèrent un meilleur volume de vente.
+*	Les véhicules a transmission automatique affichent une meilleure marge médiane et un volume nettement supérieur.
+*	Les véhicules en bonne condition ont une marge positive. Les véhicules en très mauvais état (condition 0) se comportent mieux que ceux de condition 1, tant en volume qu'en marge. Il convient donc d'éviter les véhicules de condition 1.
+*	La Californie, la Floride, la Pennsylvanie et le Texas sont les marches les plus dynamiques.
+
+### Limites de l'analyse :
+*	La période couverte est d'environ un an et demi, avec des mois manquants : les analyses temporelles sont donc peu fiables.
+*	Seules les ventes effectivement réalisées sont connues. L'absence de données sur l'offre disponible au moment de chaque vente biaise toutes les analyses. Par exemple, est-ce que les voitures noires se vendent le plus parce que les acheteurs les préfèrent, ou simplement parce qu'elles représentaient la majorité de l'offre à qualité équivalente ?
+
